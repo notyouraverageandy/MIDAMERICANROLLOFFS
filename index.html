@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid-American Roll Offs LLC | Waste Disposal Logistics</title>
+    <link rel="stylesheet" href="https://googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <img src="logo.jpg" alt="Mid-American Roll Offs LLC Logo" class="brand-logo">
+        </div>
+        <a href="tel:4172882195" class="btn call-btn">📞 417-288-2195</a>
+    </header>
+
+    <section class="hero">
+        <h1>Flat-Rate Dumpster Rentals</h1>
+        <p>Streamlined residential and construction logistics serving Dallas and surrounding counties with zero hidden overage fees.</p>
+        <div class="hero-ctas">
+            <a href="tel:4172882195" class="btn primary">Call to Reserve</a>
+            <a href="#inventory" class="btn secondary">View Rental Plans</a>
+        </div>
+    </section>
+
+    <main id="inventory">
+        <h2>Select Container & Plan Length</h2>
+        <div class="grid">
+            
+            <!-- 16-Yard Card -->
+            <div class="card">
+                <!-- Upgraded High-Detail 16-Yard Drawing -->
+                <div class="dumpster-vector-frame">
+                    <div class="dumpster-perspective-wrap">
+                        <div class="dumpster-body yard-16">
+                            <div class="side-rib"></div>
+                            <div class="side-rib"></div>
+                            <div class="side-rib"></div>
+                            <div class="side-rib"></div>
+                        </div>
+                        <div class="dumpster-rail"></div>
+                        <div class="wheel-assembly">
+                            <div class="dumpster-wheel"></div>
+                            <div class="dumpster-wheel"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>16-Yard Roll-Off Container</h3>
+                    <p class="tag">Heavy Material Specialist</p>
+                    <ul>
+                        <li><strong>Optimal Utility:</strong> Roofing shingles, kitchen remodels, concrete, dirt, or brick.</li>
+                        <li><strong>Fee Structure:</strong> Straightforward flat-rate pricing models with no overage fees.</li>
+                    </ul>
+                    
+                    <div class="date-selector-block">
+                        <label for="duration-16">Choose Rental Timeline:</label>
+                        <select id="duration-16" class="rental-duration-selector" data-target="pickup-16" data-picker="date-16">
+                            <option value="1">1-Day Quick Clear</option>
+                            <option value="3">3-Day Weekend Project</option>
+                            <option value="5">5-Day Weekday Work</option>
+                            <option value="7" selected>7-Day Standard Rental</option>
+                            <option value="30">Monthly Commercial Cycle</option>
+                        </select>
+
+                        <label for="date-16">Select Drop-Off Date:</label>
+                        <input type="date" id="date-16" class="rental-date-picker" data-target="pickup-16" data-duration-id="duration-16">
+                        <p class="pickup-notice">Scheduled Pickup: <span id="pickup-16" class="highlight-date">Pending date...</span></p>
+                    </div>
+
+                    <a href="#" class="btn primary reserve-btn" data-size="16-yard" data-date-id="date-16" data-duration-id="duration-16">Reserve Container</a>
+                </div>
+            </div>
+
+            <!-- 20-Yard Card -->
+            <div class="card">
+                <!-- Upgraded High-Detail 20-Yard Drawing (Taller profile to show scale difference) -->
+                <div class="dumpster-vector-frame">
+                    <div class="dumpster-perspective-wrap">
+                        <div class="dumpster-body yard-20">
+                            <div class="side-rib"></div>
+                            <div class="side-rib"></div>
+                            <div class="side-rib"></div>
+                            <div class="side-rib"></div>
+                        </div>
+                        <div class="dumpster-rail"></div>
+                        <div class="wheel-assembly">
+                            <div class="dumpster-wheel"></div>
+                            <div class="dumpster-wheel"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>20-Yard Roll-Off Container</h3>
+                    <p class="tag">Max Capacity Selection</p>
+                    <ul>
+                        <li><strong>Optimal Utility:</strong> Estate cleanouts, large construction projects, storm remediation.</li>
+                        <li><strong>Flexible Logistics:</strong> Hauled and dropped exactly to your specifications.</li>
+                    </ul>
+
+                    <div class="date-selector-block">
+                        <label for="duration-20">Choose Rental Timeline:</label>
+                        <select id="duration-20" class="rental-duration-selector" data-target="pickup-20" data-picker="date-20">
+                            <option value="1">1-Day Quick Clear</option>
+                            <option value="3">3-Day Weekend Project</option>
+                            <option value="5">5-Day Weekday Work</option>
+                            <option value="7" selected>7-Day Standard Rental</option>
+                            <option value="30">Monthly Commercial Cycle</option>
+                        </select>
+
+                        <label for="date-20">Select Drop-Off Date:</label>
+                        <input type="date" id="date-20" class="rental-date-picker" data-target="pickup-20" data-duration-id="duration-20">
+                        <p class="pickup-notice">Scheduled Pickup: <span id="pickup-20" class="highlight-date">Pending date...</span></p>
+                    </div>
+
+                    <a href="#" class="btn primary reserve-btn" data-size="20-yard" data-date-id="date-20" data-duration-id="duration-20">Reserve Container</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">MID-AMERICAN ROLL OFFS LLC</div>
+        <p class="phone-display">📱 417-288-2195</p>
+        <p class="copyright">&copy; 2026 All Rights Reserved.</p>
+        <p><a href="https://facebook.com" target="_blank">Follow Our Facebook Page For Live Inventory Updates</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
